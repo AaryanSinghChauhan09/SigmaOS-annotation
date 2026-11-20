@@ -1,64 +1,50 @@
-# SigmaOS-annotation Component Wiki
+# SigmaOS-SigmaOS-annotation Component Wiki
 
 ## Overview
-SigmaOS-annotation provides annotation support and document annotation for the SigmaOS operating system. It demonstrates the annotation subsystem and document marking within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic annotation initialization.
+SigmaOS-SigmaOS-annotation provides GitHub description is a placeholder; component scope remains unclassified. for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Annotation Abstraction
-- Fail-Fast on Annotation Initialization Errors
-- Deterministic Annotation Setup
-- Clear Abstraction Over Annotation APIs
-- Composition over Inheritance for annotation extensions
+- SigmaOS-annotation Abstraction
+- Fail-Fast on SigmaOS-annotation Initialization Errors
+- Deterministic SigmaOS-annotation Setup
+- Clear Abstraction Over SigmaOS-annotation APIs
+- Composition over Inheritance for SigmaOS-annotation extensions
 
 ## Architecture
-SigmaOS-annotation follows an annotation pattern:
-- **Annotation Core**: Provides annotation management, document annotation, and annotation tracking
-- **Document Annotation**: Supports document annotation, text annotation, and annotation tracking
-- **Annotation Tracking**: Supports annotation status, annotation tracking, and annotation lifecycle
-- **Error Handling**: Fail-fast on invalid annotation configurations or unsupported annotation types
+SigmaOS-SigmaOS-annotation follows a SigmaOS-annotation pattern:
+- **SigmaOS-annotation Core**: Provides SigmaOS-annotation support, SigmaOS-annotation management, and SigmaOS-annotation tracking
+- **Management**: Supports SigmaOS-annotation management, SigmaOS-annotation configuration, and SigmaOS-annotation lifecycle
+- **Tracking**: Supports SigmaOS-annotation status, SigmaOS-annotation tracking, and SigmaOS-annotation lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-annotation configurations or unsupported SigmaOS-annotation types
 
 ## API
 The component provides the following public APIs:
-- `annotate::document(document)` - Annotate a document by given document ID
-- `annotate::text(text)` - annotate text by given text ID
-- `annotate::status::annotations()` - Get annotation status and active annotations
-- `annotate::lifecycle::manage(annotation)` - Manage annotation lifecycle and annotation tracking
-- Error types for annotation failure scenarios or unsupported annotation types
+-  - Manage a SigmaOS-annotation by given configuration
+-  - Register a SigmaOS-annotation by given name
+-  - Get SigmaOS-annotation status and SigmaOS-annotation availability
+-  - Track SigmaOS-annotation management and SigmaOS-annotation tracking
+- Error types for SigmaOS-annotation failure scenarios or unsupported SigmaOS-annotation types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific annotation configuration
-2. **Act**: Execute the code under test (document annotation, text annotation)
-3. **Assert**: Verify the expected annotation results
+1. **Arrange**: Set up test environment with specific SigmaOS-annotation configuration
+2. **Act**: Execute the code under test (SigmaOS-annotation init, SigmaOS-annotation management)
+3. **Assert**: Verify the expected SigmaOS-annotation results
 
 Example:
-```rust
-#[test]
-fn test_annotate_document_aaa() {
-    // Arrange
-    let document_id = "doc-1";
-    
-    // Act
-    let result = annotate::document(document_id);
-    
-    // Assert
-    assert!(result.is_ok());
-    let annotated = result.unwrap();
-    assert!(annotated.is_annotated());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Annotation initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all annotation failure scenarios
-- Unit tests provided for document annotation and text annotation
-- Integration tests for full annotation system with actual annotation integration
+- Follows Rust best practices with 
+- SigmaOS-annotation initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-annotation failure scenarios
+- Unit tests provided for SigmaOS-annotation management and configuration
+- Integration tests for full SigmaOS-annotation system with actual SigmaOS-annotation integration
 
 ## TODO
-- Add support for additional annotation types (text annotation, image annotation, metadata annotation)
-- Expand document capabilities (document annotations, annotation groups, annotation categories)
-- Add lifecycle features (annotation tracking, annotation lifecycle, annotation propagation)
-- Create integration tests with actual annotation systems and annotation integration
-- Implement annotation persistence and annotation state management
+- Add support for additional SigmaOS-annotation types
+- Expand SigmaOS-annotation capabilities (SigmaOS-annotation features, SigmaOS-annotation configurations, SigmaOS-annotation tracking)
+- Add lifecycle features (SigmaOS-annotation tracking, SigmaOS-annotation lifecycle, SigmaOS-annotation propagation)
+- Create integration tests with actual SigmaOS-annotation systems and SigmaOS-annotation integration
+- Implement SigmaOS-annotation persistence and SigmaOS-annotation state management
